@@ -13,7 +13,15 @@
     "name": "Brandon Pierce",
     "url": "https://brandonjpierce.com"
   },
+ "repository": "brandonjpierce/pino-grigio",
   "license": "MIT",
+  "files": [
+    "formatters",
+    "index.js",
+    "bin.js",
+    "utils.js",
+    "screenshot.png"
+  ],
   "engines": {
     "node": ">=6"
   },
