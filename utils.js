@@ -12,17 +12,18 @@ exports.levels = levels;
 
 exports.nl = '\n';
 
-exports.isFalsy = value => !!value;
+exports.isFalsy = value => Boolean(value);
 
 exports.isEmptyObject = obj =>
   Object.keys(obj).length === 0 && obj.constructor === Object;
 
+// Taken from pino source
 exports.isPinoLine = line =>
   line &&
-  line.hasOwnProperty('v') &&
-  line.hasOwnProperty('pid') &&
-  line.hasOwnProperty('level') &&
-  line.hasOwnProperty('hostname');
+  Object.prototype.hasOwnProperty.call(line, 'v') &&
+  Object.prototype.hasOwnProperty.call(line, 'pid') &&
+  Object.prototype.hasOwnProperty.call(line, 'level') &&
+  Object.prototype.hasOwnProperty.call(line, 'hostname');
 
 exports.getLevelName = level => {
   if (level === 10) return levels.trace;
