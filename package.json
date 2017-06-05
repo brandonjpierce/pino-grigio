@@ -1,6 +1,6 @@
 {
   "name": "pino-grigio",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "🍷 A Clean and developer friendly transport for Pino logger 🌲.",
   "keywords": [
     "pino",
@@ -13,7 +13,7 @@
     "name": "Brandon Pierce",
     "url": "https://brandonjpierce.com"
   },
- "repository": "brandonjpierce/pino-grigio",
+  "repository": "brandonjpierce/pino-grigio",
   "license": "MIT",
   "files": [
     "formatters",
